@@ -1,0 +1,13 @@
+※：MCP_ROOT = MCPやForgeを展開（解凍）したフォルダとお考えください。
+-------------------- v1.4.7（Forge#534） --------------------
+
+Ｑ：ubuntu 14.04 LTS環境でastyleが「無効なコンフィギュレーションファイルオプション」を吐く
+astyleでコードを整形する際、ubuntu 14.04 LTSではオプションエラーが出る事がある。
+
+Ａ：astyle.cfgを編集する
+MCP_ROOT/fml/conf/astyle.cfgを開き「max-instatement-indent=2」を「max-instatement-indent=40」に書き換えるか、
+Forge#738のforge/fml/conf/フォルダからastyle.cfgを流用する。
+
+ちなみにv1.4.7以下の環境（MCPやForge）では全て「max-instatement-indent=2」に設定されているので注意。
+
+現状ではWindows環境では唯一install.batのみで完全に環境を構築できるバージョンかも知れません。

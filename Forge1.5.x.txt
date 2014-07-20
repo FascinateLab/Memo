@@ -1,0 +1,15 @@
+※：MCP_ROOT = MCPやForgeを展開（解凍）したフォルダとお考えください。
+-------------------- v1.5.2（Forge#738） --------------------
+
+Ｑ：install.cmd(.sh)を実行しても途中でfailedが出る。
+環境の構築の際「http://files.minecraftforge.net/fmllibs/」から
+scala-library.jarを自動でダウンロードしていたのですが、
+現在はscala-library.jarは存在しないため環境構築に失敗します。
+
+Ａ：手動でscala-library.jarを導入する。
+「http://files.minecraftforge.net/fmllibs/」の「fml_libs15.zip」をダウンロードして、
+中にある「scala-library.jar」をMCP_ROOT/mcp/lib/フォルダにコピーします。
+
+scala-library.jar.stashをダウンロードしてリネームしても構いませんが、
+fml_libs15.zipなら他のライブラリもまとめて確保できるので保険になると思います。
+

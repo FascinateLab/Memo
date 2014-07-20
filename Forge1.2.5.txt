@@ -1,0 +1,32 @@
+※：MCP_ROOT = MCPやForgeを展開（解凍）したフォルダとお考えください。
+-------------------- v1.2.5（Forge#171） --------------------
+
+Ｑ：install.cmd(.sh)が実行できない
+自動でMCPやjarファイルなどをダウンロードする機能はForge#445からなので、
+それ以前のバージョンで環境を構築する場合は手動でファイルを導入しなければなりません。
+
+１：mcp62.zipをダウンロード＆適当なフォルダ（例えばc:\mcp）に解凍する
+２：minecraftforge-src-1.2.5-3.4.9.171.zip（Forge#171）をダウンロード＆解凍する
+３：解凍したforgeフォルダをMCPフォルダ（先ほど解凍したmcpフォルダなど）にコピーする
+４：MCP_ROOT/jarsフォルダにbinフォルダを作成する
+５：binフォルダに.minecraft/libraries/org/lwjgl/lwjglからそれぞれjanput.jar、lwjgl.jar、lwjgl_util.jarをコピーする
+６：binフォルダに.minecraft/versions/1.2.5/1.2.5-nativesフォルダをコピーして1.2.5-nativesをnativesにリネームする
+７：binフォルダに.minecraft/versions/1.2.5/1.2.5.jarをコピーしてminecraft.jarにリネームする
+８：効果音や音声が必要な場合は、MCP_ROOT/jarsフォルダに.minecraft/resourcesフォルダをコピーする。
+※：４から６の作業は旧ランチャー時代に作成したbinフォルダが残っているならそれをコピーするだけでOKです。
+
+詳しくはMinecraft Modding Wikiを確認してください。（丸投げ）
+
+Minecraft Modding Wiki
+http://minecraftjp.info/modding/index.php/Minecraft_Modding_Wiki
+
+※：ubuntu 14.04 LTS環境での注意点
+forgeフォルダのinstall.shとforge/confフォルダのastyle.cfgの改行コードが
+「CRLF改行」になっているのでubuntuではこのまま使用することが出来ません。
+実行してもコマンドが通らなかったり設定ファイルが正常に認識されません。
+
+この場合Forge#738（v1.5.2）のソースファイルから
+install.sh（forgeフォルダにある物）とastyle.cfgを流用するか、
+テキストエディタでinstall.shとastyle.cfgをLF改行で保存し直し、
+astyle.cfgの「maxinstatement-indent=2」を「40」に書き換えます。
+ただし、forge/fmlフォルダにあるinstall.shは別物なのでこちらは触らないでください。

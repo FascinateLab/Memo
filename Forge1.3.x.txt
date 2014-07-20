@@ -1,0 +1,9 @@
+※：MCP_ROOT = MCPやForgeを展開（解凍）したフォルダとお考えください。
+-------------------- v1.3.2（Forge#318） --------------------
+
+おそらく需要は無いので詳細な事は書きませんが、
+v1.2.5とv1.4.5の間のような物で必要な物を集めてから環境を構築する必要があります。
+詳しくはMinecraft Modding Wikiを確認してください。
+
+Minecraft Modding Wiki
+http://minecraftjp.info/modding/index.php/Minecraft_Modding_Wiki

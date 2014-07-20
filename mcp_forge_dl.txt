@@ -1,0 +1,24 @@
+-------------------- Minecraft Moddingソフトのダウンロード先 --------------------
+＜MCP＞
+
+MCP Download Links（正式版から最新版まで公開。ただし一部マイナーバージョンアップしたMCPは置いてない）
+※：不定期だが最新varのMCPのfields.csvとmethods.csvも公開されている
+http://mcp.llbit.se/
+
+MCP Website（v1.5からv1.6.4まで公開）
+※：Forgeが自動でダウンロードしてくるMCPはここにアップされているが、一部のバージョンのリンクは非公開になっている
+http://mcp.ocean-labs.de/
+
+MCP Old Releases（v1.6.1以下が公開）
+※：ここでしか入手出来ないバージョンもあるかも？
+http://mcpold.ocean-labs.de/index.php/MCP_Old_Releases
+
+
+＜Forge＞
+
+Minecraft Forge Downloads（SrcのリンクをクリックするとModding用のファイルがダウンロード出来る
+※：旧バージョンはFor legacy builds pleaseのページにあります。
+http://files.minecraftforge.net/
+
+v1.4.5かv1.4.6辺りからMCPが自動でダウンロードされるようになったので別途MCPを用意しなくても大丈夫。
+ただしそれ以前のバージョンはMCPが必要なので注意。
